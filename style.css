@@ -1,0 +1,771 @@
+                                                                /* standards  */
+
+body {
+  margin: 0;
+
+  font-family: 'roboto', Arial, 'sans-serif';
+
+  background-color: #fbf5f5;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1050px;
+  margin: 0 auto;
+
+  box-shadow: 0 -5px 9px 2px #dbdbdb;
+}
+
+ul,
+p,
+h2 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #696969;
+}
+                                                            /* text standarts */
+.caption {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: ultra-condensed;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  border-bottom: 3px solid #f4511e;
+}
+
+.slim-text {
+  font-size: 18px;
+  text-align: center;
+  color: #696969;
+}
+                                                                    /* header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 144px;
+  padding: 0 30px;
+
+  background-color: #f8f6f6;
+}
+
+.main-header img {
+  width: 160px;
+  height: 100px;
+}
+
+.header__logo span {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #696969;
+}
+
+.header__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 40px;
+
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgba(105,105,105,0.7);
+  border: 2px solid #696969;
+}
+                                                              /* under-header */
+.under-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 710px;
+
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #696969;
+
+  background-color: #353535;
+  background-image: url(image/smoke.png);
+  background-repeat: no-repeat;
+}
+
+.under-header span {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+
+  font-size: 65px;
+}
+                                                        /* about us container */
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 90px 0;
+
+  background-color: white;
+}
+
+.about-us h2 {
+  margin-bottom: 25px;
+}
+
+.about-us__advantages {
+  display: flex;
+  justify-content: space-between;
+
+  width: 990px;
+  padding: 0 30px;
+  margin-top: 55px;
+}
+
+.about-us__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 320px;
+  height: 200px;
+
+  color: #707070;
+  background-color: #ebebeb;
+}
+
+.about-us__block__top {
+  display: flex;
+  align-items: center;
+  height: 105px;
+}
+
+.about-us__block__bottom {
+  text-align: center;
+}
+
+.about-us__block__caption {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-us__block__bottom p {
+  padding: 10px 30px 0px 30px;
+
+  font-size: 18px;
+}
+                                                            /* interim slider */
+.slider-block {
+  display: flex;
+  height: 430px;
+}
+
+.slider-block__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 50%;
+	height: 100%;
+
+	color: white;
+
+	background: linear-gradient(to right, #22292f, #0b0f12);
+}
+
+.slider-block__text span {
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.slider-block__text p {
+  width: 480px;
+  margin-top: 35px;
+	padding: 0 20px;
+
+	font-size: 20px;
+	text-align: center;
+}
+
+.slider {
+	width: 50%;
+  height: 430px;
+
+  background-image: url(image/slider2.jpg);
+  background-repeat: no-repeat;
+  background-size: 525px 430px;
+}
+                                                        /* production section */
+.pruduction {
+  background-color: white;
+}
+
+.production__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 90px;
+  padding-bottom: 55px;
+}
+
+.production__caption {
+  margin-bottom: 25px;
+}
+
+.pruduction__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 0 30px;
+}
+
+.pruduction__item {
+  display: flex;
+
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+
+  border: 2px solid #ebebeb;
+  background-image: url(image/product.jpg);
+}
+
+.pruduction__item-last {
+	margin-bottom: 90px;
+}
+
+ .pruduction__item-visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.pruduction__item-visually-hidden h3 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.pruduction__item-visually-hidden p {
+  font-weight: 700;
+}
+                                                    /* production block hover */
+.pruduction__item:hover .pruduction__item-visually-hidden {
+  position: relative;
+
+  width: 300px;
+  height: 200px;
+  overflow: visible;
+
+  text-align: center;
+  color: #3d3d3d;
+  background-color: rgba(235,235,235,0.6);
+  border: 2px solid #3d3d3d;
+}
+
+.pruduction__item:hover {
+  border: none;
+}
+                                                            /* interim block */
+.unnamed-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 240px;
+
+  font-size: 26px;
+  text-transform: uppercase;
+  color: white;
+
+  background-color: #1c1c1c;
+}
+                                                    /* about company section */
+.about-company-info {
+  background-color: white;
+}
+
+.about-company__header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-company-info__caption {
+  margin-top: 75px;
+  margin-bottom: 25px;
+}
+
+.white-background {
+  justify-content: space-between;
+
+  margin-top: 80px;
+}
+
+.about-company__blocks {
+  display: flex;
+
+	padding: 0 30px;
+}
+
+.about-company__block {
+  position: relative;
+
+  width: 290px;
+
+  text-align: center;
+	border: 5px solid #ebebeb;
+}
+
+.vape-icon {
+  background-image: url(image/vape-pattern.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.about-company__block svg {
+  position: absolute;
+  left: 128px;
+  top: 60px;
+}
+
+.about-company__block__caption {
+  margin-top: 25px;
+  margin-bottom: 56px;
+
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #171f23;
+}
+
+.about-company__block__text {
+  padding: 0 20px;
+  min-height: 150px;
+
+  text-align: center;
+  font-size: 18px;
+  color: #171f23;
+}
+
+.dark-background {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 30px 0px;
+  margin-top: 30px;
+
+  background-color: #171f23;
+}
+
+.about-company__block-bottom {
+  border: 5px solid #ebebeb;
+}
+
+.block-bottom__caption {
+  color: white;
+}
+
+.block-bottom__text {
+  color: white;
+}
+                                                    /* leave application form */
+.poduct-booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 80px;
+
+  background-color: white;
+}
+
+.poduct-booking__caption {
+  margin-top: 75px;
+  margin-bottom: 25px;
+}
+
+.poduct-booking__form {
+  margin-top: 90px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-top {
+  display: flex;
+  justify-content: space-between;
+
+  width: 775px;
+  margin-bottom: 40px;
+}
+
+form span {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #696969;
+}
+
+input {
+  border: none;
+}
+
+.input {
+  height: 50px;
+  border-bottom: 1px solid #cacaca;
+}
+
+.input1 {
+  width: 370px;
+}
+
+.button-submit {
+  width: 200px;
+  height: 50px;
+  margin-top: 60px;
+  margin-left: 285px;
+
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+
+  background-color: #f6744b;
+}
+                                                            /* footer section */
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 235px;
+
+  background-color: #171f23;
+}
+
+.footer__logo span {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 90px;
+  height: 32px;
+  margin: 15px 0;
+}
+                                                                  /* buttons */
+.button-submit:hover {
+	background-color: #ed4c3c;
+}
+
+.button-submit:active {
+	background-color: #c1372a;
+	color: #d9c9c7;
+}
+
+.site-maker:hover {
+	color: #cacaca;
+	border-bottom: 1px solid #cacaca;
+}
+
+.site-maker:active {
+	color: #828282;
+	border-bottom: 1px solid #828282;
+}
+                                                        /* tablet resolution */
+@media (max-width:1050px) {
+	.container {
+	  width: 764px;
+	  margin: 0 auto;
+
+	  box-shadow: 0 -5px 9px 2px #dbdbdb;
+	}
+                                                                /* text size */
+	.caption {
+	  font-size: 36px;
+	  text-transform: uppercase;
+	  border-bottom: 2px solid #f4511e;
+	}
+
+	.slim-text {
+	  font-size: 18px;
+	  color: #696969;
+	}
+
+	h1 {
+		font-size: 48px;
+	}
+                                                            /* header section */
+	.header__logo {
+		width: 200px;
+	}
+
+	.header__logo span {
+		font-size: 30px;
+	}
+
+	.under-header span {
+		font-size: 27px;
+	}
+                                                          /* about us section */
+	.about-us__advantages {
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 724px;
+		padding: 0 20px;
+	}
+
+	.about-us__first-block {
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+
+  .about-us__block__bottom p {
+    width: 320px;
+
+  }
+                                                            /* interim slider */
+	.slider-block__text span {
+		font-size: 25px;
+	}
+
+	.slider-block__text p {
+    width: 340px;
+		font-size: 18px;
+	}
+                                                    /* about company section */
+	.vape-icon {
+		position: absolute;
+
+	  width: 1px;
+	  height: 1px;
+	  margin: -1px;
+	  border: 0;
+	  padding: 0;
+
+	  white-space: nowrap;
+
+	  clip-path: inset(100%);
+	  clip: rect(0 0 0 0);
+	  overflow: hidden;
+	}
+
+	.white-background {
+		justify-content: space-around;
+
+		padding: 0;
+	}
+                                                    /* leave application form */
+	.form-top {
+		width: 580px;
+	}
+
+	.input1 {
+		width: 280px;
+	}
+
+	.button-submit {
+		margin-left: 180px;
+	}
+}
+                                                          /* phone resolution */
+@media (max-width:764px) {
+  .container {
+	  width: 364px;
+	  margin: 0 auto;
+
+	  box-shadow: 0 -5px 9px 2px #dbdbdb;
+	}
+                                                                /* text size */
+  .caption {
+	  font-size: 27px;
+	  text-transform: uppercase;
+	  border-bottom: 2px solid #f4511e;
+	}
+
+	.slim-text {
+    width: 364px;
+    padding: 0 15px;
+
+	  font-size: 13px;
+	  color: #696969;
+	}
+
+	h1 {
+    width: 364px;
+		font-size: 36px;
+	}
+
+	.header__logo span {
+		font-size: 22px;
+	}
+
+	.under-header span {
+		font-size: 27px;
+	}
+                                                            /* header section */
+  .header__logo {
+		width: 135px;
+	}
+
+  .header__logo img {
+    width: auto;
+    height: auto;
+  }
+
+  .header__item {
+    width: 120px;
+    font-size: 12px;
+  }
+                                                          /* about us section */
+  .about-us {
+    padding: 50px 0;
+  }
+
+  .about-us__advantages {
+    width: 364px;
+  }
+
+  .about-us__first-block{
+    margin: 0;
+  }
+
+  .about-us__block  {
+    margin-bottom: 10px;
+  }
+
+  .about-us__block__bottom p {
+    width: 324px;
+  }
+                                                            /* interim slider */
+  .slider-block {
+    display: block;
+    height: auto;
+  }
+
+  .slider-block__text {
+    width: 364px;
+    height: 430px;
+
+    background: linear-gradient(to bottom, #22292f, #0b0f12);
+  }
+
+  .slider-block__text p {
+    width: 364px;
+  }
+
+  .slider {
+    width: 364px;
+    height: 430px;
+    background-size: cover;
+    background-position: left;
+  }
+
+  .production__top {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .unnamed-block {
+    font-size: 16px;
+  }
+                                                      /* about company section */
+  .about-company__blocks {
+    flex-wrap: wrap;
+  }
+
+  .about-company__block {
+    margin-bottom: 10px;
+  }
+
+  .about-company-info__caption {
+    margin-top: 50px;
+  }
+
+  .white-background {
+    margin-top: 40px;
+  }
+                                                    /* leave application form */
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .poduct-booking__caption {
+    margin-top: 50px;
+  }
+
+  .poduct-booking__form {
+    margin-top: 50px;
+  }
+
+  .form-top {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 320px;
+    margin: 0;
+  }
+
+  .input {
+    width: 280px;
+    margin-bottom: 20px;
+  }
+
+  .button-submit {
+    margin-left: 0px;
+  }
+
+}
