@@ -31,6 +31,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 
   box-shadow: 0 -5px 9px 2px #dbdbdb;
+  background-color: white;
 }
 
 ul,
@@ -75,7 +76,7 @@ a {
 
 .main-header img {
   width: 160px;
-  height: 100px;
+  height: 144px;
 }
 
 .header__logo span {
@@ -110,7 +111,6 @@ a {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   text-align: center;
-  color: #696969;
 
   background-color: #353535;
   background-image: url(image/smoke.png);
@@ -120,6 +120,11 @@ a {
 .under-header span {
   font-size: 36px;
   font-weight: bold;
+
+  background: linear-gradient(to right, #b9b9b9, #696969);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.2px #000000;
 }
 
 h1 {
@@ -127,6 +132,11 @@ h1 {
   margin: 0;
 
   font-size: 65px;
+
+  background: linear-gradient(to right, #b9b9b9, #696969);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.2px #000000;
 }
                                                         /* about us container */
 .about-us {
@@ -523,6 +533,16 @@ input {
 	color: #828282;
 	border-bottom: 1px solid #828282;
 }
+
+/* Animation */
+
+[data-aos = "new-animation"] {
+  transform: scale(0.5);;
+}
+
+[data-aos = "new-animation"].aos-animate {
+  transform: scale(1);
+}
                                                         /* tablet resolution */
 @media (max-width:1050px) {
 	.container {
@@ -767,5 +787,4 @@ input {
   .button-submit {
     margin-left: 0px;
   }
-
 }
